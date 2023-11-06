@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+li{
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "bebas neue";
+    position: relative;
+    /* border-bottom: red 5px solid; */
+    cursor: pointer;
+}
+
+/* li::before{
+    content: "--";
+}
+li::after{
+    content: "--";
+} */
+
+/* contant lagana jaroori h */
+
+li::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* top: -5px; */
+    width: 0;
+    height: 10%;
+    background-color: rgb(10, 31, 3);
+    transition: 0.45s;
+}
+li:hover::before{
+    width: 100%;
+}
